@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="calibratePane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CalibrationController">
+   <children>
+      <Circle fx:id="r1" fill="GREY" radius="200.0" stroke="GREY" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fx:id="r3" fill="GREY" layoutY="720.0" radius="200.0" stroke="GREY" strokeType="INSIDE" />
+      <Circle fx:id="r4" fill="GREY" layoutX="1280.0" layoutY="720.0" radius="200.0" stroke="GREY" strokeType="INSIDE" />
+      <Circle fx:id="r2" fill="GREY" layoutX="1280.0" radius="200.0" stroke="GREY" strokeType="INSIDE" />
+      <Text fx:id="tipText" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="           " wrappingWidth="1280.0">
+         <font>
+            <Font name="Calibri Light" size="50.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="gameHPane" prefHeight="80.0" prefWidth="570.0" style="-fx-background-color: #bc51ff; -fx-background-radius: 15; -fx-border-color: #bd18ff; -fx-border-radius: 15;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GameHBarController">
+   <children>
+      <ImageView fx:id="gameImage" fitHeight="68.0" fitWidth="68.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../basketball.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="stateButton" buttonType="RAISED" layoutX="414.0" layoutY="18.0" onAction="#doStateChange" prefHeight="44.0" prefWidth="130.0" style="-fx-background-color: lightgreen; -fx-background-radius: 10;" text="ADD" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <Rectangle fx:id="level1" arcHeight="5.0" arcWidth="5.0" fill="DARKGRAY" height="5.0" layoutX="166.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <Rectangle fx:id="level2" arcHeight="5.0" arcWidth="5.0" fill="DARKGRAY" height="5.0" layoutX="186.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <Rectangle fx:id="level3" arcHeight="5.0" arcWidth="5.0" fill="DARKGRAY" height="5.0" layoutX="206.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <Rectangle fx:id="level4" arcHeight="5.0" arcWidth="5.0" fill="DARKGRAY" height="5.0" layoutX="226.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <Rectangle fx:id="level5" arcHeight="5.0" arcWidth="5.0" fill="DARKGRAY" height="5.0" layoutX="246.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <Rectangle fx:id="level10" arcHeight="5.0" arcWidth="5.0" fill="DARKGRAY" height="5.0" layoutX="346.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <Rectangle fx:id="level9" arcHeight="5.0" arcWidth="5.0" fill="DARKGRAY" height="5.0" layoutX="326.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <Rectangle fx:id="level8" arcHeight="5.0" arcWidth="5.0" fill="DARKGRAY" height="5.0" layoutX="306.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <Rectangle fx:id="level7" arcHeight="5.0" arcWidth="5.0" fill="DARKGRAY" height="5.0" layoutX="286.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <Rectangle fx:id="level6" arcHeight="5.0" arcWidth="5.0" fill="DARKGRAY" height="5.0" layoutX="266.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <Rectangle fx:id="repeat6" arcHeight="5.0" arcWidth="5.0" fill="DARKGRAY" height="5.0" layoutX="266.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <Rectangle fx:id="repeat7" arcHeight="5.0" arcWidth="5.0" fill="DARKGRAY" height="5.0" layoutX="286.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <Rectangle fx:id="repeat8" arcHeight="5.0" arcWidth="5.0" fill="DARKGRAY" height="5.0" layoutX="306.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <Rectangle fx:id="repeat9" arcHeight="5.0" arcWidth="5.0" fill="DARKGRAY" height="5.0" layoutX="326.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <Rectangle fx:id="repeat10" arcHeight="5.0" arcWidth="5.0" fill="DARKGRAY" height="5.0" layoutX="346.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <Rectangle fx:id="repeat5" arcHeight="5.0" arcWidth="5.0" fill="DARKGRAY" height="5.0" layoutX="246.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <Rectangle fx:id="repeat4" arcHeight="5.0" arcWidth="5.0" fill="DARKGRAY" height="5.0" layoutX="226.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <Rectangle fx:id="repeat3" arcHeight="5.0" arcWidth="5.0" fill="DARKGRAY" height="5.0" layoutX="206.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <Rectangle fx:id="repeat2" arcHeight="5.0" arcWidth="5.0" fill="DARKGRAY" height="5.0" layoutX="186.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <Rectangle fx:id="repeat1" arcHeight="5.0" arcWidth="5.0" fill="DARKGRAY" height="5.0" layoutX="166.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" />
+      <Label fx:id="levelLabel" layoutX="112.0" layoutY="23.0" text="LEVEL" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="repeatLabel" layoutX="112.0" layoutY="43.0" prefHeight="15.0" prefWidth="53.0" text="REPEAT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="level" layoutX="378.0" layoutY="23.0" text="1" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="repeat" layoutX="378.0" layoutY="43.0" text="1" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="time" layoutX="560.0" layoutY="29.0" prefHeight="17.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="GamePane" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Game2Controller">
+   <children>
+      <Button fx:id="Game_pause_btn" layoutX="23.0" layoutY="22.0" mnemonicParsing="false" onAction="#ActionOnGame_pause_btn" text="Pause" />
+      <Button fx:id="Game_exit_btn" layoutX="86.0" layoutY="22.0" mnemonicParsing="false" onAction="#ActionOnGame_exit_btn" text="Exit" />
+      <Button fx:id="Game_skip_btn" layoutX="133.0" layoutY="22.0" mnemonicParsing="false" onAction="#ActionOnGame_skip_btn" text="Skip" />
+      <Circle fx:id="Game_Target" fill="#ff401f" layoutX="308.0" layoutY="244.0" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="Game_how_btn" layoutX="679.0" layoutY="406.0" mnemonicParsing="false" onAction="#ActionOnGame_how_btn" text="How to play" />
+   </children>
+</AnchorPane>

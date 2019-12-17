@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Register2Controller">
+   <children>
+      <JFXTextField fx:id="secretTextField" layoutX="460.0" layoutY="366.0" prefHeight="50.0" prefWidth="500.0">
+         <font>
+            <Font name="Calibri Light" size="30.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="confirmButton" buttonType="RAISED" layoutX="420.0" layoutY="560.0" onAction="#doRegister" prefHeight="70.0" prefWidth="200.0" ripplerFill="BLACK" style="-fx-background-color: lightgreen;" text="CONFIRM" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="backButton" buttonType="RAISED" layoutX="660.0" layoutY="560.0" onAction="#doBack" prefHeight="70.0" prefWidth="200.0" ripplerFill="BLACK" style="-fx-background-color: lightgreen;" text="BACK" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="nameTextField" layoutX="460.0" layoutY="296.0" prefHeight="50.0" prefWidth="500.0">
+         <font>
+            <Font name="Calibri Light" size="30.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="320.0" layoutY="310.0" prefHeight="62.0" prefWidth="92.0" text="NAME" textFill="#797979">
+         <font>
+            <Font name="Calibri Light" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="380.0" prefHeight="62.0" prefWidth="125.0" text="SECRET" textFill="#797979">
+         <font>
+            <Font name="Calibri Light" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="tipLabel" layoutX="320.0" layoutY="223.0" prefHeight="62.0" prefWidth="640.0" text="WRONG !" textFill="#ff3b3b">
+         <font>
+            <Font name="Calibri Light" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="450.0" prefHeight="62.0" prefWidth="168.0" text="RE-SEC" textFill="#797979">
+         <font>
+            <Font name="Calibri Light" size="30.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="resecretTextField" layoutX="460.0" layoutY="436.0" prefHeight="50.0" prefWidth="500.0">
+         <font>
+            <Font name="Calibri Light" size="30.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

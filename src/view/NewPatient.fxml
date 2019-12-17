@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="NewPatientPane" prefHeight="500.0" prefWidth="450.0" style="-fx-background-radius: 20; -fx-background-color: lightyellow; -fx-border-color: #ffa13e; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewPatientController">
+   <children>
+      <JFXButton fx:id="backButton" buttonType="RAISED" layoutX="247.0" layoutY="384.0" onAction="#doBack" prefHeight="44.0" prefWidth="131.0" ripplerFill="BLACK" style="-fx-background-color: lightgreen; -fx-background-radius: 10;" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="addButton" buttonType="RAISED" layoutX="97.0" layoutY="384.0" onAction="#addPatient" prefHeight="41.0" prefWidth="131.0" ripplerFill="BLACK" style="-fx-background-color: lightgreen; -fx-background-radius: 10;" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXRadioButton fx:id="maleOption" layoutX="62.0" layoutY="235.0" prefHeight="30.0" prefWidth="100.0" text="     .">
+         <font>
+            <Font name="Calibri Light" size="25.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="femaleOption" layoutX="192.0" layoutY="235.0" prefHeight="30.0" prefWidth="120.0" text="     .">
+         <font>
+            <Font name="Calibri Light" size="25.0" />
+         </font>
+      </JFXRadioButton>
+      <ImageView fx:id="boyImg" fitHeight="60.0" fitWidth="60.0" layoutX="91.0" layoutY="220.0">
+         <image>
+            <Image url="@../../../boy.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="girlImg" fitHeight="60.0" fitWidth="60.0" layoutX="222.0" layoutY="220.0">
+         <image>
+            <Image url="@../../../girl.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="name" layoutX="62.0" layoutY="158.0" prefHeight="41.0" prefWidth="349.0" promptText="NAME" style="-fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #ffa13e; -fx-background-color: white;" />
+      <ComboBox fx:id="ageBox" layoutX="62.0" layoutY="298.0" prefHeight="41.0" prefWidth="152.0" promptText="AGE" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #ffa13e; -fx-border-radius: 10;" />
+      <ImageView fx:id="title" fitHeight="37.0" fitWidth="300.0" layoutX="87.0" layoutY="54.0">
+         <image>
+            <Image url="@../../../cooltext299322143804010.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="warningLabel" layoutX="80.0" layoutY="128.0" prefHeight="21.0" prefWidth="300.0" text="Please enter all the information" textFill="#f20000">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
